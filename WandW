@@ -1,0 +1,19 @@
+puts "Hello and welcome to Wizards and Workplaces, a world all too familiar, yet all too alien and unique!"
+
+def opener
+puts "Let us begin with your name."
+@name  = gets.chomp.capitalize
+puts "Your name is #{@name}, correct?"
+nameanswer = gets.chomp.downcase
+if nameanswer.include? "y"
+puts "Wonderful!  It is an honor, #{@name}."
+else
+puts "Oh, my apologies.  Let's try again."
+opener
+end
+end
+
+#CURRENT IN PROGRESS
+def class_selection
+puts "Although you may feel humble and average as your fellow worker, I am here to tell you that that is not the case!  You have a certain energy inside of you, a heroic ancestry, I should say.  I'm sure you've felt it too!"
+end
